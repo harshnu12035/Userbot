@@ -15,16 +15,16 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "INVALID_BOT_TOKEN")
 ELITE_BOT_USERNAME = os.getenv("ELITE_BOT_USERNAME", "@InvalidBotUsername")
 
 # Access Control
-SUDO_USERS = [int(x) for x in os.getenv("SUDO_USERS", "5470956337").split(",") if x.strip()]
+SUDO_USERS = [int(x) for x in os.getenv("SUDO_USERS", "7081885854").split(",") if x.strip()]
 LOG_CHAT_ID = int(os.getenv("LOG_CHAT_ID", "0"))
 
 # Image URLs
-PMPERMIT_PIC = os.getenv("PMPERMIT_PIC", "https://files.catbox.moe/tocisn.png")  
-ALIVE_PIC = os.getenv("ALIVE_PIC", "https://files.catbox.moe/tocisn.png") 
-PING_PIC = os.getenv("PING_PIC", "https://files.catbox.moe/tocisn.png")
+PMPERMIT_PIC = os.getenv("PMPERMIT_PIC", "https://graph.org/file/85091410fd58ae4f2c1cb-adb754c65e20176ce8.jpg")  
+ALIVE_PIC = os.getenv("ALIVE_PIC", "https://graph.org/file/85091410fd58ae4f2c1cb-adb754c65e20176ce8.jpg") 
+PING_PIC = os.getenv("PING_PIC", "https://graph.org/file/85091410fd58ae4f2c1cb-adb754c65e20176ce8.jpg")
 
 # Update Configuration
-UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/rishabhops/CipherElite")
+UPSTREAM_REPO = os.getenv("UPSTREAM_REPO", "https://github.com/sachinopboy2/Userbot")
 BRANCH = os.getenv("BRANCH", "elite")
 
 # for  debugging dont edit this
