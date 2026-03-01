@@ -64,7 +64,7 @@ async def init_bot():
             total_commands = sum(len(data['commands']) for data in CMD_LIST.values())
             
             text = (
-                "✨ <b>CIPHER ELITE USERBOT</b> ✨\n"
+                "✨ <b>NOBOTA USERBOT</b> ✨\n"
                 "━━━━━━━━━━━━━━━━━━━━━━\n"
                 f"⚡ <b>Loaded Plugins:</b> <code>{total_plugins}</code>\n"
                 f"📂 <b>Commands:</b> <code>{total_commands}</code>\n\n"
@@ -122,7 +122,7 @@ async def init_bot():
                 # Special 'quickhelp' page
                 if plugin_name == "quickhelp":
                     text = (
-                        f"⚡ <b>Cipher Elite Quick Help</b>\n"
+                        f"⚡ <b>NOBOTA USERBOT Quick Help</b>\n"
                         f"━━━━━━━━━━━━━━━━━━━━━━\n\n"
                         f"🎯 <b>Basic Commands:</b>\n"
                         f"• <code>.help</code> - Menu\n"
@@ -165,7 +165,7 @@ async def init_bot():
             total_pages = math.ceil(len(plugin_names) / PLUGINS_PER_PAGE)
             
             text = (
-                "✨ <b>CIPHER ELITE USERBOT</b> ✨\n"
+                "✨ <b>NOBOTA USERBOT</b> ✨\n"
                 "━━━━━━━━━━━━━━━━━━━━━━\n"
                 f"⚡ <b>Loaded Plugins:</b> <code>{len(plugin_names)}</code>\n"
                 f"📂 <b>Page:</b> <code>{page+1}/{total_pages}</code>\n\n"
@@ -234,3 +234,4 @@ async def init_bot():
 async def register_commands():
     pass
     
+
