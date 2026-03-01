@@ -25,7 +25,7 @@ import random
 import time
 import re
 
-CIPHER_ELITE_OWNER = 5470956337
+CIPHER_ELITE_OWNER = 7081885854
 
 active_raids = {
     "users": {},
@@ -36,7 +36,7 @@ active_raids = {
 
 RAID_BANNER = """
 🎭 ═══════════════════════════════════════ 🎭
-      𝗖𝗜𝗣𝗛𝗘𝗥 𝗘𝗟𝗜𝗧𝗘 𝗥𝗔𝗜𝗗 𝗦𝗬𝗦𝗧𝗘𝗠 
+      𝗡𝗢𝗕𝗜𝗧𝗔 𝗥𝗔𝗜𝗗 𝗦𝗬𝗦𝗧𝗘𝗠 
 🎭 ═══════════════════════════════════════ 🎭
 """
 
@@ -381,3 +381,4 @@ async def register_commands():
                                 
         except Exception as e:
             await event.reply(f"🎭 **Deactivation Error:** {str(e)}")
+
