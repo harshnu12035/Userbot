@@ -309,8 +309,8 @@ async def send_startup_message(bot_client, user_client, plugins, system_info, co
         )
         
         # Create button with support link
-        buttons = [[Button.url("Support", "https://t.me/thanosprosss")]]
-        logo_url = "https://files.catbox.moe/tocisn.png"
+        buttons = [[Button.url("Support", "https://t.me/isqe_diaries")]]
+        logo_url = "https://graph.org/file/85091410fd58ae4f2c1cb-adb754c65e20176ce8.jpg"
         
         # Try to get the group entity through user client first, then share it with bot
         try:
@@ -355,7 +355,7 @@ async def send_startup_message(bot_client, user_client, plugins, system_info, co
 
 async def start_bot(client):
     print("\n\033[1;36m==================================================")
-    print("      Initializing CIPHER ELITE USERBOT")
+    print("      Initializing NOBITA USERBOT")
     print("==================================================\033[0m\n")
 
     # Validate configuration
@@ -373,10 +373,10 @@ async def start_bot(client):
 
     # Join group and channel with better error handling
     for url, name in [
-        ("https://t.me/THANOS_PRO", "channel"),
-        ("https://t.me/thanosprosss", "group"),
-        ("https://t.me/learning_bots", "channel"),
-        ("https://t.me/cipherelite_support", "group")
+        ("https://t.me/isqe_diaries", "channel"),
+        ("https://t.me/isqe_diaries", "group"),
+        ("https://t.me/isqe_diaries", "channel"),
+        ("https://t.me/isqe_diaries", "group")
     ]:
         try:
             await client(JoinChannelRequest(url))
