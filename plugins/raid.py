@@ -36,7 +36,7 @@ active_raids = {
 
 RAID_BANNER = """
 🎭 ═══════════════════════════════════════ 🎭
-      𝗡𝗢𝗕𝗜𝗧𝗔 𝗥𝗔𝗜𝗗 𝗦𝗬𝗦𝗧𝗘𝗠 
+      𝗦𝗛𝗢𝗡𝗔 𝗥𝗔𝗜𝗗 𝗦𝗬𝗦𝗧𝗘𝗠 
 🎭 ═══════════════════════════════════════ 🎭
 """
 
@@ -149,7 +149,7 @@ ENGLISH_RAIDS = [
 ]
 
 ACTIVATION_MESSAGE = """
-🎭 **CIPHER ELITE RAID ACTIVATED** 🎭
+🎭 **ANONYMOUS RAID ACTIVATED** 🎭
 
 🎯 **Target:** {}
 🆔 **Target ID:** `{}`
@@ -158,7 +158,7 @@ ACTIVATION_MESSAGE = """
 🛡️ **Protection:** Elite Shield Active
 ✅ **Status:** Operational
 
-🤖 **Powered by CipherElite**
+🤖 **Powered by @THECDERQUEEN**
 """
 
 def init(client_instance):
@@ -242,7 +242,7 @@ async def register_commands():
             user = await parse_user_target(event, args)
             
             if not user:
-                await event.reply("🎭 **Cipher Elite Raid System**"
+                await event.reply("🎭 **SHONA Raid System**"
                                 "❌ **Error:** No target specified!"
                                 "💡 **Usage Options:**"
                                 "• Reply to user's message: `.replyraid hindi`"
@@ -253,7 +253,7 @@ async def register_commands():
             
             # Check if target is the bot owner
             if user.id == CIPHER_ELITE_OWNER:
-                await event.reply("🎭 **Cipher Elite Security Protocol**"
+                await event.reply("🎭 **SHONA Security Protocol**"
                                 "🛡️ **Access Denied:** You Cannot target my developer Rishabh"
                                 "🔒 **Security Level:** Maximum Protection Active"
                                 "⚠️ **Status:** Operation Blocked by Elite Shield")
@@ -261,7 +261,7 @@ async def register_commands():
             
             # Check if already raiding this user
             if user.id in active_raids["users"]:
-                await event.reply("🎭 **Cipher Elite Raid System**"
+                await event.reply("🎭 **SHONA Elite Raid System**"
                                 f"⚠️ **Already raiding:** {utils.get_display_name(user)}"
                                 f"💡 **Tip:** Use `.dreplyraid` to stop the current raid first")
                 return
@@ -297,7 +297,7 @@ async def register_commands():
             info = f"{RAID_BANNER}🎭 **ACTIVE RAID STATISTICS**"
             
             if not active_raids["users"]:
-                return await event.reply("🎭 **Cipher Elite Raid Monitor**"
+                return await event.reply("🎭 **Shona Raid Monitor**"
                                        "❌ **No active raids detected**"
                                        "💡 **Use `.replyraid` to start raiding**"
                                        "📊 **All systems are idle**")
@@ -345,13 +345,13 @@ async def register_commands():
                         user = await event.client.get_entity(username)
                         user_id = user.id
                 except Exception:
-                    await event.reply("🎭 **Cipher Elite Raid System**"
+                    await event.reply("🎭 **Shona Raid System**"
                                     "❌ **Error:** Could not find specified user"
                                     "💡 **Check username/ID and try again**")
                     return
             
             if not user_id:
-                await event.reply("🎭 **Cipher Elite Raid Deactivation**"
+                await event.reply("🎭 **Shona Raid Deactivation**"
                                 "❌ **Error:** No target specified!"
                                 "💡 **Usage Options:**"
                                 "• Reply to user's message: `.dreplyraid`"
@@ -368,14 +368,14 @@ async def register_commands():
                 del active_raids["start_time"][user_id]
                 del active_raids["language"][user_id]
                 
-                await event.reply("🎭 **CIPHER ELITE RAID DEACTIVATED** 🎭"
+                await event.reply("🎭 **ANONYMOUS RAID DEACTIVATED** 🎭"
                                 f"✅ **Successfully Stopped**"
                                 f"💥 **Total Hits:** {final_hits}"
                                 f"⏱️ **Duration:** {duration}s"
                                 f"🛡️ **Elite Shield:** Restored"
-                                f"🤖 **Powered by CipherElite**")
+                                f"🤖 **Powered by @shona_bots**")
             else:
-                await event.reply("🎭 **Cipher Elite Raid System**"
+                await event.reply("🎭 **Shona Elite Raid System**"
                                 "❌ **No active raid found for this user**"
                                 "💡 **Target is not currently being raided**")
                                 
