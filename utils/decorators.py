@@ -84,7 +84,7 @@ def rishabh_help():
             if sender_id not in Config.SUDO_USERS:
                 await event.answer(
                     "🎭 **Cipher Elite Access Restricted!**\n\n"
-                    "🔒 **Deploy your own Cipher Elite Bot:**\n"
+                    "🔒 **Deploy your own Shona User Bot:**\n"
                     "github.com/rishabhops/CipherElite\n\n"
                     "⚡ **Unauthorized access denied**", 
                     alert=True
