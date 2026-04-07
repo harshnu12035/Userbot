@@ -365,7 +365,7 @@ def init(client_instance):
     add_handler("raid", commands, description)
 
 async def parse_user_target(event, args):
-    """Parse and retrieve user entity from reply, username, or ID"""
+    """Parse and retrieve user entity from reply"""
     user = None
     
     # Check if replying to a message
