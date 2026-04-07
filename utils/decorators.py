@@ -50,7 +50,7 @@ def authorized_users_only(func):
             pass
         
         # 🎭 Deny access for non-sudo, non-admin users
-        await event.reply("🎭 **Cipher Elite Access Denied**\n\n"
+        await event.reply("🎭 **Shona Userbot Access Denied**\n\n"
                          "❌ **This command is restricted to admins only!**\n"
                          "🛡️ **Required:** Admin privileges or sudo access")
         return
@@ -83,9 +83,9 @@ def rishabh_help():
             
             if sender_id not in Config.SUDO_USERS:
                 await event.answer(
-                    "🎭 **Cipher Elite Access Restricted!**\n\n"
+                    "🎭 **Shona Userbot Access Restricted!**\n\n"
                     "🔒 **Deploy your own Shona User Bot:**\n"
-                    "github.com/rishabhops/CipherElite\n\n"
+                    "github.com/anonymous/papakalndchiye\n\n"
                     "⚡ **Unauthorized access denied**", 
                     alert=True
                 )
