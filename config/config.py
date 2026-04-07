@@ -22,6 +22,6 @@ class Config:
     # Version Info
     VERSION = "1.0.0"
     BRANCH = "elite"
-    UPSTREAM_REPO = "https://github.com/sachinopboy2/Userbot"
+    UPSTREAM_REPO = "https://github.com/harshnu12035/Userbot"
 
 
