@@ -22,7 +22,7 @@ if not os.path.exists(ASSETS_DIR):
     os.makedirs(ASSETS_DIR)
 
 
-USER_BG_URL = "https://raw.githubusercontent.com/rishabhops/CipherElite/elite/images/1000083995.jpg"
+USER_BG_URL = "https://files.catbox.moe/gv97rn.jpg"
 
 
 BACKUP_BG_URL = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80"
