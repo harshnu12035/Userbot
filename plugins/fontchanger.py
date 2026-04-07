@@ -179,7 +179,7 @@ async def register_commands():
             )
     
             await event.reply(
-                "🎭 **CipherElite Font Result**\n\n"
+                "🎭 **Shona Bot Font Result**\n\n"
                 f"📝 **Original:** `{text}`\n"
                 f"✨ **Styled:** `{result}`"
             )
