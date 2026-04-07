@@ -103,24 +103,32 @@ async def explode(event):
 @CipherElite.on(events.NewMessage(pattern=r"^\.dial$", outgoing=True))
 @rishabh()
 async def dial(event):
-    """Simulate a call to a VIP"""
+    """Simulate a call to a ANONYMOUSPAPA"""
     if event.fwd_from:
         return
     animation_interval = 2
     animation_ttl = range(10)
-    event = await edit_or_reply(event, "📞 Dialing a VIP...")
+    event = await edit_or_reply(event, "📞 Dailing ㅤ ᴀɴᴏɴʏᴍᴏᴜs (𝐁ᴀᴀᴘ of telegram)......")
     animation_chars = [
-        "`Connecting to Secret Network...`",
-        "`Call Initiated.`",
-        "`VIP: Who's this?`",
-        f"`Me: Yo, it's {DEFAULTUSER}!`",
-        "`VIP: Authentication in progress...`",
-        "`Call Secured at +91-SECRET-NO`",
-        f"`Me: Hey, what's good?`",
-        "`VIP: Yo, {DEFAULTUSER}! Been ages!`",
-        "`VIP: Gotta run, catch ya later!`",
-        "`Call Ended. Stay cool! 😎`"
-    ]
+        "`Connecting To Telegram #_ᴀɴᴏɴʏᴍᴏᴜs`",
+        "`Call Connected.`",
+        "`𝐀𝐍𝐎𝐍𝐘𝐌𝐎𝐔𝐒: Hello ʙᴏʟ ᴍᴄ. ᴋᴏɴ ʀᴀɴᴅɪ ᴋᴀ ᴘɪʟʟᴀ ʜᴀɪ ᴛᴜ...ʙsᴅᴋᴇ ᴋʏᴀ ᴋᴀᴀᴍ ʜᴀɪ ᴛᴇʀᴀ..?`",
+        f"`Me:  ᴍᴇ ʜᴜɴ ᴛᴇʀᴀ` {DEFAULTUSER} ,`ᴍᴜᴛʜᴇ    ᴇᴋ ʀᴀɴᴅɪ ᴋɪ ɢᴀᴀɴᴅ🍃 ᴋɪ ɢᴀɴᴅ ᴍᴀʀɴɪ ʜᴀɪ..😁😁`",
+        "`User Authorised.`",
+        "`Calling ㅤ ʀᴀɴᴅɪ ᴋᴀ ᴘɪʟʟᴀ🍃`  `At +916969696969`",
+        "`Private  Call Connected...`",
+        "`Me:ʜᴇʟʟᴏ ᴍᴄ, ʀᴀɴᴅɪ ᴋᴀ ᴘɪʟʟᴀ🍃...ᴛᴇʀɪ ᴍᴀ ᴋɪ ᴄʜᴜᴛ...🤣🤣😂.`",
+        "ㅤ ʀᴀɴᴅɪ ᴋᴀ ᴘɪʟʟᴀ🍃 :ᴏᴋᴀʏ sɪʀ ʙᴜᴛ ᴘᴇʜʟᴇ #_ᴀɴᴏɴʏᴍᴏᴜs ᴋᴀ ʙᴇᴛᴀ ᴋᴏɴ ʜᴀɪ ᴛᴜ?...😎`",
+        f"`ᴍᴇ: ᴀʙᴇ ᴢʜᴀᴛᴜ, ɪ ᴀᴍ` {DEFAULTUSER} ",
+        "`ㅤ ᴀɴᴏɴʏᴍᴏᴜs🍃 : ᴀʙᴇ ғᴀᴛᴇ ʜᴜʏᴇ ᴄᴏɴᴅᴀᴍ ᴋᴇ ɴᴀᴛɪᴊᴇ...🤣🤣\nʙsᴅᴋᴇ ɢʜᴀʀ ᴍᴇ ɢʜᴜsᴋᴇ ᴛᴇʀɪ ᴀᴍᴍᴀ ʙᴇʜᴇɴ ᴋᴀ ʀᴇᴘ ᴋᴀʀᴅᴜɴɢᴀ ᴢʜᴀᴛᴜ😜.`",
+        "`ᴍᴇ: ᴀʙᴇ ʙsᴅᴋᴇ... ᴛᴇʟᴇɢʀᴀᴍ #_ᴀɴᴏɴʏᴍᴏᴜs ᴋᴏ ᴄʜᴀʟᴀ ʀᴀʜᴀ ᴋɪ #_ᴀɴᴏɴʏᴍᴏᴜs ᴛᴇʟᴇɢʀᴀᴍ ᴋᴏ ᴄʜᴀʟᴀ ʀᴀʜᴀ...?😜.`",
+        "`ㅤ ᴀɴᴏɴʏᴍᴏᴜs🍃 : ʙᴇᴛᴇ...!! ɴᴀᴀ ᴊᴀᴍɪɴ ᴘᴇ ɴᴀ ᴀᴀsᴍᴀɴ ᴘᴇ...😉😉 ᴛᴇʀɪ ᴍᴀʏʏᴀ ᴋᴏ ᴄʜʜᴏᴅᴜɴɢᴀ ᴍᴇ #_ᴋғɢ ᴋᴇ ᴄʟᴀɴ ᴘᴇ...🥵🥵.`",
+        "`ᴍᴇ: ʙʜᴀɪ...ʏᴀᴀʀ ᴍᴇʀɪ ɢᴀᴀɴᴅ ᴍᴀʀᴏ ʙᴜᴛ ᴍᴜᴊʜᴇ ᴍᴀғ ᴋᴀʀᴏ...🤯`",
+        "`ㅤ ᴀɴᴏɴʏᴍᴏᴜs🍃 : ʜɪʜɪʜɪ... ʏᴇ ʜᴜɪ ɴᴀ ʙᴀᴀᴛ....😁😁\nᴄʜᴀʟ ᴀᴀʙ ᴀᴀᴘɴɪ ʀᴀɴᴅɪ ᴍᴀʏʏᴀ ᴋᴏ #_ᴋғɢ ᴋᴇ ᴠᴄ ᴘᴇ ʙᴜʟᴀ ᴋᴇ ʟᴏᴠᴇ ᴜ ʙᴏʟɴᴇ  ᴋᴏ ʙᴏʟ😛😛.`",
+        "`ᴍᴇ: ʙʜᴀɪ ᴘʟᴢ ɢᴀʟɪ ᴍᴛ ᴅᴏ😥.`",
+        "`ㅤ ᴀɴᴏɴʏᴍᴏᴜs🍃 : ᴛᴏ #_ʜᴀʀsʜ ᴋᴏ ʙᴀᴀᴘ ʙᴏʟ ᴀᴜʀ...ᴄʜᴀʟ ʙʜᴀɢ ʏᴀʜᴀ sᴇ ᴍᴄ..ʙsᴅᴋᴇ ᴋᴇ ᴘʜɪʀ ᴄᴀʟʟ ᴋɪʏᴀ ᴛᴏ #_ᴋғɢ ᴋɪ ᴠᴄ ᴘᴇ ᴛᴇʀᴇ ʙᴀᴀᴘ ᴋɪ ᴄʜᴜᴛ ᴍᴀʀᴜɴɢᴀ..🤣🤣  \n🙈𝐓ɢ 𝐏ᴇ 𝐑ᴇʜɴᴀ 𝐇ᴀɪ 𝐓ᴏ🧐 ᴀɴᴏɴʏᴍᴏᴜs 𝐊ᴏ 𝐁ᴀᴀᴘ💞ᴋᴀʜɴᴀ ʜᴀɪ🤪 @harshking_br32👻 :)`",
+        "`ᴘʀɪᴠᴀᴛᴇ ᴄᴀʟʟ ᴅɪsᴄᴏɴɴᴇᴄᴛᴇᴅ....ᴊᴏʀ sᴇ ʙᴏʟᴏ ᴀʟᴘʜᴀ ᴘᴀᴘᴀ ᴊɪ ᴊᴀɪ🤣🤣🤣`",
+    ] 
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 10])
