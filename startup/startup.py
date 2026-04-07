@@ -58,7 +58,7 @@ async def display_startup_message(client, plugins):
     user_name = (await client.get_me()).first_name
     banner = f"""
 \033[1;36m=====================
- CIPHER ELITE USERBOT
+ 𝐒𝐇𝐎𝐍𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓
 =====================
 \033[1;32mStatus  : ONLINE
 Python  : v{system_info["python"]}
@@ -68,7 +68,7 @@ Plugins : {len(plugins)} loaded
 User    : {user_name}
 Started : {system_info["uptime"]}
 \033[1;36m=====================
-\033[1;33mElite Power Activated!\033[0m
+\033[1;33m𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬 𝐏𝐨𝐰𝐞𝐫 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝!\033[0m
 """
     print(banner)
     return system_info
@@ -82,10 +82,10 @@ async def configure_bot_via_botfather(user_client, bot_username):
     bot_name = f"{user_first_name}'s Assistant"
     bot_bio = (
         f"🤖 Personal Assistant Bot for {user_first_name}\n\n"
-        "🔰 Cipher Elite Userbot Assistant\n"
-        "⚡ Powered by thanospros\n"
+        "🔰 Shona Userbot Assistant\n"
+        "⚡ Powered by thecderqueen\n"
         "🛡️ Advanced Automation & Management\n\n"
-        "🔗 Support: @thanosprosss"
+        "🔗 Support: @shona_bots"
     )
     bot_about = f"🤖 Assistant for {user_first_name} | Cipher Elite | @thanosprosss"
     
@@ -294,7 +294,7 @@ async def send_startup_message(bot_client, user_client, plugins, system_info, co
         bot_me = await bot_client.get_me()
         message = (
             "=====================\n"
-            "**CIPHER ELITE USERBOT**\n"
+            "**𝐒𝐇𝐎𝐍𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓**\n"
             "=====================\n"
             f"**Status**: ONLINE\n"
             f"**User**: {user.first_name} (`{user.id}`)\n"
@@ -305,12 +305,12 @@ async def send_startup_message(bot_client, user_client, plugins, system_info, co
             f"**Plugins**: {len(plugins)} loaded\n"
             f"**Started**: {system_info['uptime']}\n"
             "=====================\n"
-            "**Elite Power Activated!**"
+            "**𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬 𝐏𝐨𝐰𝐞𝐫 𝐀𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝!**"
         )
         
         # Create button with support link
-        buttons = [[Button.url("Support", "https://t.me/isqe_diaries")]]
-        logo_url = "https://graph.org/file/85091410fd58ae4f2c1cb-adb754c65e20176ce8.jpg"
+        buttons = [[Button.url("Support", "https://t.me/SHONA_SUPPORT")]]
+        logo_url = "https://files.catbox.moe/xnto0q.jpg"
         
         # Try to get the group entity through user client first, then share it with bot
         try:
@@ -355,7 +355,7 @@ async def send_startup_message(bot_client, user_client, plugins, system_info, co
 
 async def start_bot(client):
     print("\n\033[1;36m==================================================")
-    print("      Initializing NOBITA USERBOT")
+    print("      Initializing sʜᴏɴᴀ ᴜsᴇʀʙᴏᴛ")
     print("==================================================\033[0m\n")
 
     # Validate configuration
@@ -373,10 +373,10 @@ async def start_bot(client):
 
     # Join group and channel with better error handling
     for url, name in [
-        ("https://t.me/isqe_diaries", "channel"),
-        ("https://t.me/isqe_diaries", "group"),
-        ("https://t.me/isqe_diaries", "channel"),
-        ("https://t.me/isqe_diaries", "group")
+        ("https://t.me/shona_bots", "channel"),
+        ("https://t.me/shona_bots", "group"),
+        ("https://t.me/shona_bots", "channel"),
+        ("https://t.me/shona_bots", "group")
     ]:
         try:
             await client(JoinChannelRequest(url))
