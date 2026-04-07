@@ -31,8 +31,8 @@ CONFIG_FILE = DB_DIR / "alive_config.json"
 # ---------------------------------------------------------------------------
 ALIVE_BUTTONS = [
     [
-        Button.url("💬 Support", "https://t.me/cipherelite_support"),
-        Button.url("📢 Channel", "https://t.me/THANOS_PRO"),
+        Button.url("💬 Support", "https://t.me/SHONA_SUPPORT"),
+        Button.url("📢 Channel", "https://t.me/Shona_bots"),
     ]
 ]
 
@@ -112,7 +112,7 @@ def get_readable_time(seconds: float) -> str:
     return ":".join(reversed(time_list))
 
 ALIVE_STYLES = [
-    r"""⚡ 𝘾𝙄𝙋𝙃𝙀𝙍 𝙀𝙇𝙄𝙏𝙀 𝙎𝙔𝙎𝙏𝙀𝙈 ⚡
+    r"""⚡ 𝐒𝐇𝐎𝐍𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐒𝐘𝐒𝐓𝐄𝐌 ⚡
 
 ▰▱▰▱▰▱▰▱▰▱▰▱▰▱
 ➺ 𝙈𝘼𝙎𝙏𝙀𝙍: {name}
@@ -124,7 +124,7 @@ ALIVE_STYLES = [
 ⚔️ 𝙐𝙋𝙏𝙄𝙈𝙀: {uptime}
 ⚔️ 𝘽𝙍𝘼𝙉𝘾𝙃: MASTER
 
-▰▱▰▱ ELITE NETWORK ▰▱▰▱""",
+▰▱▰▱ 𝐒𝐇𝐎𝐍𝐀 𝐁𝐎𝐓𝐒 ▰▱▰▱""",
     r"""╔══『 CIPHER ELITE 』══╗
 
 ◈ CODENAME: {name}
@@ -135,7 +135,7 @@ ALIVE_STYLES = [
 ▣ UPTIME: {uptime}
 ▣ STATUS: OPERATIONAL
 
-╚══『 ELITE FORCE 』══╝""",
+╚══『 𝐁𝐎𝐓𝐒 FORCE 』══╝""",
 ]
 
 PING_STYLES = [
@@ -150,7 +150,7 @@ PING_STYLES = [
 ◈ SPEED: [{speed}ms]
 ◈ UPTIME: [{uptime}]
 
-╚══『 CIPHER ELITE 』══╝""",
+╚══『 @𝐒𝐇𝐎𝐍𝐀_𝐁𝐎𝐓𝐒 』══╝""",
 ]
 
 user_config = UserConfig()
